@@ -1,0 +1,19 @@
+<ng-container *ngIf="data">
+<div *ngFor="let item of data">
+    <ng-container *ngIf="item">
+    <ul class="card-wrapper">
+        <li class="card">
+           
+          <img src={{item.multimedia[0].url}} alt=''>
+         
+          <h1 >{{item.title}}</h1>
+          <h3>{{item.abstract}}</h3> 
+          <h2><a href={{item.short_url}}>more Info</a></h2>
+          <p>{{item.created_date}}</p>
+        </li>
+       
+      
+      </ul>
+    </ng-container>
+    </div>
+</ng-container>

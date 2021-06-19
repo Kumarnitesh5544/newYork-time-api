@@ -1,0 +1,19 @@
+
+<ng-container *ngIf="TopStorydata">
+<div *ngFor="let item of TopStorydata">
+  <ng-container *ngIf="item">
+  <ul class="card-wrapper">
+      <li class="card">
+       
+      <img src="https://static01.nyt.com/{{item.multimedia[0].url}}" >  
+       
+      <h2>{{item.snippet}}</h2>
+      <h3>{{item.lead_paragraph}}</h3>
+        <h5><a href={{item.web_url}}>more Info</a></h5>
+     
+      </li>
+     
+    
+    </ul>
+    </ng-container>
+  </div></ng-container>

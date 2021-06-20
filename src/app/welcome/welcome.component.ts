@@ -19,7 +19,7 @@ getdata:any;
 
  this.id1=this.route.params.subscribe((res:any)=>{
   this.TopStoryService.searchbyname(res.id).subscribe((res:any)=>{
-     
+       {{res}}
     this.TopStorydata=(res.response.docs);
  })
 

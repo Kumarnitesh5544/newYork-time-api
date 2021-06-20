@@ -10,13 +10,14 @@ import {GetbyComponent} from './getby/getby.component';
 const routes: Routes = [
  
   {
+    path:"",
+    component:MainpageComponent
+  },
+  {
     path:"about",
     component:AboutComponent
   },
-  {
-    path:"mainpage",
-    component:MainpageComponent
-  },
+ 
   {
     path:"topbar",
     component:TopbarComponent

@@ -16,6 +16,7 @@ import{TopstoryService} from '../topstory.service';
     }
     newsSearch(){
      // console.log(this.topic);
+     
       this.route.navigate(['welcome',this.topic])
      //  this.topic="";
    
